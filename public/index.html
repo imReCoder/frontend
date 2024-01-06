@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div id="dataEntryForm">
+        <h1>Data Entry Form</h1>
+
+        <form id="mdpeForm">
+            <label for="zone">Zone:</label>
+            <select id="zone" required>
+                <!-- Add zone options -->
+            </select>
+
+
+            <label for="contractor">Contractor:</label>
+            <select id="contractor" required>
+                <!-- Add contractor options -->
+            </select>
+
+            <label for="tpiName">TPI Name:</label>
+            <select id="tpiName" required>
+                <!-- Add TPI name options -->
+            </select>
+
+            <label for="ward">Ward:</label>
+            <select id="ward" required>
+                <!-- Add ward options -->
+            </select>
+
+            <label for="rfc">RFC:</label>
+            <input type="text" id="rfc" required>
+
+            <label for="documentUploadRFC">Document Upload for RFC:</label>
+            <input type="file" id="documentUploadRFC" accept=".pdf, .doc, .docx">
+
+            <label for="riserConnectivity">Riser Connectivity:</label>
+            <input type="text" id="riserConnectivity" required>
+
+            <label for="documentUploadRiser">Document Upload for Riser Connectivity:</label>
+            <input type="file" id="documentUploadRiser" accept=".pdf, .doc, .docx">
+
+            <label for="serviceLine">Service Line:</label>
+            <input type="text" id="serviceLine" required>
+
+            <label for="documentUploadServiceLine">Document Upload for Service Line:</label>
+            <input type="file" id="documentUploadServiceLine" accept=".pdf, .doc, .docx">
+
+            <label for="lay20mm">Lay - 20 MM:</label>
+            <input type="number" id="lay20mm" required>
+
+            <label for="documentUploadLay20mm">Document Upload for Lay - 20 MM:</label>
+            <input type="file" id="documentUploadLay20mm" accept=".pdf, .doc, .docx">
+
+            <label for="lay32mm">Lay - 32 MM:</label>
+            <input type="number" id="lay32mm" required>
+
+            <label for="documentUploadLay32mm">Document Upload for Lay - 32 MM:</label>
+            <input type="file" id="documentUploadLay32mm" accept=".pdf, .doc, .docx">
+
+            <label for="lay63mm">Lay - 63 MM:</label>
+            <input type="number" id="lay63mm" required>
+
+            <label for="documentUploadLay63mm">Document Upload for Lay - 63 MM:</label>
+            <input type="file" id="documentUploadLay63mm" accept=".pdf, .doc, .docx">
+
+            <label for="lay125mm">Lay - 125 MM:</label>
+            <input type="number" id="lay125mm" required>
+
+            <label for="documentUploadLay125mm">Document Upload for Lay - 125 MM:</label>
+            <input type="file" id="documentUploadLay125mm" accept=".pdf, .doc, .docx">
+
+            <label for="lay180mm">Lay - 180 MM:</label>
+            <input type="number" id="lay180mm" required>
+
+            <label for="documentUploadLay180mm">Document Upload for Lay - 180 MM:</label>
+            <input type="file" id="documentUploadLay180mm" accept=".pdf, .doc, .docx">
+
+            <label for="malbaSection">Malba Section:</label>
+            <input type="text" id="malbaSection" required>
+
+            <label for="hardRockSection">Hard Rock Section:</label>
+            <input type="text" id="hardRockSection" required>
+
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-functions.js"></script>
+    <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+    <script src="./contractor.js"></script>
+    <script src="./tpi.js"></script>
+    <script src="./ward.js"></script>
+    <script src="./config.js"></script>
+    <script src="./firebase.js"></script>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
